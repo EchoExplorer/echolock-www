@@ -22,8 +22,8 @@
             <h1>Echolocation Consent</h1>
 
             <h3>
-                <p>This game is part of a research study conducted by Laurie Heller and Pulkit Grover at Carnegie Mellon University and is partially funded by Google.
-                    The purpose of the research is to understand how people can use sounds (such as echoes) to figure out aspects of their physical environment, such as whether or not a wall is nearby. The game will use virtual sounds and virtual walls to teach people how to use sound to virtually move around in the game. This current release of the app is designed to provide user feedback on the app itself.</p>
+                This game is part of a research study conducted by Laurie Heller and Pulkit Grover at Carnegie Mellon   University and is partially funded by Google.
+                    The purpose of the research is to understand how people can use sounds (such as echoes) to figure out aspects of their physical environment, such as whether or not a wall is nearby. The game will use virtual sounds and virtual walls to teach people how to use sound to virtually move around in the game. This current release of the app is designed to provide user feedback on the app itself.
             </h3>
             <h2>
                 Procedures  </h2>
@@ -82,18 +82,18 @@
                 <p>If you have questions pertaining to your rights as a research participant; or to report concerns to this study, you should contact the Office of Research integrity and Compliance at Carnegie Mellon University.  Email: <a href="mailto:irb-review@andrew.cmu.edu" target="_top">irb-review@andrew.cmu.edu</a>. Phone: 412-268-1901 or 412-268-5460.</p>
 
             </div>
-            <form>
+            <form action="/cgi-bin/processConsent.py" method="post">
                 <div class="form-group">
                     I am age 18 or older.
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="agecheck" id="yes" value="option1">
+                            <input class="form-check-input" type="radio" name="agecheck" id="agecheckyes" value="yes">
                             Yes
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="agecheck" id="no" value="option2">
+                            <input class="form-check-input" type="radio" name="agecheck" id="agecheckno" value="no">
                             No
                         </label>
                     </div>
@@ -102,13 +102,13 @@
                 <div class="form-group"> I have read and understand the information above.
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="understandcheck" id="yes" value="option1">
+                            <input class="form-check-input" type="radio" name="understandcheck" id="understandcheckyes" value="yes">
                             Yes
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="understandcheck" id="no" value="option2">
+                            <input class="form-check-input" type="radio" name="understandcheck" id="understandcheckno" value="no">
                             No
                         </label>
                     </div>
@@ -116,18 +116,18 @@
                 <div class="form-group">I want to participate in this research and continue with the game and survey.  
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="researchcheck" id="yes" value="option1">
+                            <input class="form-check-input" type="radio" name="researchcheck" id="researchcheckyes" value="yes">
                             Yes
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="researchcheck" id="no" value="option2">
+                            <input class="form-check-input" type="radio" name="researchcheck" id="researchcheckno" value="no">
                             No
                         </label>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <input type="submit" class="btn btn-lg btn-primary" id="submitsurvey" value="Submit"/>
             </form>
 
         </div> <!-- /container -->

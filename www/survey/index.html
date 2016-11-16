@@ -21,25 +21,25 @@
         <div class="container">
             <h1>Echolocation App Usability and Satisfaction Survey</h1>
 
-            <form>
+            <form action="/cgi-bin/processSurvey.py" method="post">
                 <h4>Yes/No/(Not Applicable)</h4>
                 <div class="form-group">
                     Are you enjoying the game?
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="enjoy" id="yes" value="option1">
+                            <input class="form-check-input" type="radio" name="enjoy" id="enjoyyes" value="yes">
                             Yes
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="enjoy" id="no" value="option2">
+                            <input class="form-check-input" type="radio" name="enjoy" id="enjoyno" value="no">
                             No
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="enjoy" id="na" value="option3">
+                            <input class="form-check-input" type="radio" name="enjoy" id="enjoyna" value="na">
                             n/a
                         </label>
                     </div>
@@ -48,19 +48,19 @@
                     Do you plan to play this game more?
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="playmore" id="yes" value="option1">
+                            <input class="form-check-input" type="radio" name="playmore" id="playmoreyes" value="yes">
                             Yes
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="playmore" id="no" value="option2">
+                            <input class="form-check-input" type="radio" name="playmore" id="playmoreno" value="no">
                             No
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="playmore" id="na" value="option3">
+                            <input class="form-check-input" type="radio" name="playmore" id="playmorena" value="na">
                             n/a
                         </label>
                     </div>
@@ -69,19 +69,19 @@
                     Did you find this game easy?
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="easy" id="yes" value="option1">
+                            <input class="form-check-input" type="radio" name="easy" id="easyyes" value="yes">
                             Yes
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="easy" id="no" value="option2">
+                            <input class="form-check-input" type="radio" name="easy" id="easyno" value="no">
                             No
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="easy" id="na" value="option3">
+                            <input class="form-check-input" type="radio" name="easy" id="easyna" value="na">
                             n/a
                         </label>
                     </div>
@@ -90,19 +90,19 @@
                     Did you get lost often?
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="lost" id="yes" value="option1">
+                            <input class="form-check-input" type="radio" name="lost" id="lostyes" value="yes">
                             Yes
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="lost" id="no" value="option2">
+                            <input class="form-check-input" type="radio" name="lost" id="lostno" value="no">
                             No
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="lost" id="na" value="option3">
+                            <input class="form-check-input" type="radio" name="lost" id="lostna" value="na">
                             n/a
                         </label>
                     </div>
@@ -111,19 +111,19 @@
                     Did you understand what the echoes were telling you about the maze?
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="understandecho" id="yes" value="option1">
+                            <input class="form-check-input" type="radio" name="understandecho" id="understandechoyes" value="yes">
                             Yes
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="understandecho" id="no" value="option2">
+                            <input class="form-check-input" type="radio" name="understandecho" id="understandechono" value="no">
                             No
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="understandecho" id="na" value="option3">
+                            <input class="form-check-input" type="radio" name="understandecho" id="understandechona" value="na">
                             n/a
                         </label>
                     </div>
@@ -132,19 +132,19 @@
                     Did you find this game frustrating?
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="frustrating" id="yes" value="option1">
+                            <input class="form-check-input" type="radio" name="frustrating" id="frustratingyes" value="yes">
                             Yes
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="frustrating" id="no" value="option2">
+                            <input class="form-check-input" type="radio" name="frustrating" id="frustratingno" value="no">
                             No
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="frustrating" id="na" value="option3">
+                            <input class="form-check-input" type="radio" name="frustrating" id="frustratingna" value="na">
                             n/a
                         </label>
                     </div>
@@ -153,19 +153,19 @@
                     Did you start with the tutorial?
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="tutorial" id="yes" value="option1">
+                            <input class="form-check-input" type="radio" name="tutorial" id="tutorialyes" value="yes">
                             Yes
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="tutorial" id="no" value="option2">
+                            <input class="form-check-input" type="radio" name="tutorial" id="tutorialno" value="no">
                             No
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="tutorial" id="na" value="option3">
+                            <input class="form-check-input" type="radio" name="tutorial" id="tutorialna" value="na">
                             n/a
                         </label>
                     </div>
@@ -174,19 +174,19 @@
                     Was the tutorial helpful?
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="tutorialhelp" id="yes" value="option1">
+                            <input class="form-check-input" type="radio" name="tutorialhelp" id="tutorialhelpyes" value="yes">
                             Yes
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="tutorialhelp" id="no" value="option2">
+                            <input class="form-check-input" type="radio" name="tutorialhelp" id="tutorialhelpno" value="no">
                             No
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="tutorialhelp" id="na" value="option3">
+                            <input class="form-check-input" type="radio" name="tutorialhelp" id="tutorialhelpna" value="na">
                             n/a
                         </label>
                     </div>
@@ -195,19 +195,19 @@
                     Was the hint menu helpful?
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="hints" id="yes" value="option1">
+                            <input class="form-check-input" type="radio" name="hints" id="hintsyes" value="yes">
                             Yes
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="hints" id="no" value="option2">
+                            <input class="form-check-input" type="radio" name="hints" id="hintsno" value="no">
                             No
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="hints" id="na" value="option3">
+                            <input class="form-check-input" type="radio" name="hints" id="hintsna" value="na">
                             n/a
                         </label>
                     </div>
@@ -216,19 +216,19 @@
                     Were the voice instructions helpful?
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="instructions" id="yes" value="option1">
+                            <input class="form-check-input" type="radio" name="instructions" id="instructionsyes" value="yes">
                             Yes
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="instructions" id="no" value="option2">
+                            <input class="form-check-input" type="radio" name="instructions" id="instructionsno" value="no">
                             No
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="instructions" id="na" value="option3">
+                            <input class="form-check-input" type="radio" name="instructions" id="instructionsna" value="na">
                             n/a
                         </label>
                     </div>
@@ -237,19 +237,19 @@
                     Were the control gestures easy to learn and use?
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="controls" id="yes" value="option1">
+                            <input class="form-check-input" type="radio" name="controls" id="controlsyes" value="yes">
                             Yes
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="controls" id="no" value="option2">
+                            <input class="form-check-input" type="radio" name="controls" id="controlsno" value="no">
                             No
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="controls" id="na" value="option3">
+                            <input class="form-check-input" type="radio" name="controls" id="controlsna" value="na">
                             n/a
                         </label>
                     </div>
@@ -258,19 +258,19 @@
                     Did you ever look at the maze to figure out where to go?
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="look" id="yes" value="option1">
+                            <input class="form-check-input" type="radio" name="look" id="lookyes" value="yes">
                             Yes
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="look" id="no" value="option2">
+                            <input class="form-check-input" type="radio" name="look" id="lookno" value="no">
                             No
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="look" id="na" value="option3">
+                            <input class="form-check-input" type="radio" name="look" id="lookna" value="na">
                             n/a
                         </label>
                     </div>
@@ -279,19 +279,19 @@
                     Have you ever used echoes to navigate before, either in a game or real life?
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="echonavigate" id="yes" value="option1">
+                            <input class="form-check-input" type="radio" name="echonavigate" id="echonavigateyes" value="yes">
                             Yes
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="echonavigate" id="no" value="option2">
+                            <input class="form-check-input" type="radio" name="echonavigate" id="echonavigateno" value="no">
                             No
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="echonavigate" id="na" value="option3">
+                            <input class="form-check-input" type="radio" name="echonavigate" id="echonavigatena" value="na">
                             n/a
                         </label>
                     </div>
@@ -300,19 +300,19 @@
                     Do you have a visual impairment that is not fully corrected by glasses?
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="visuallyimpaired" id="yes" value="option1">
+                            <input class="form-check-input" type="radio" name="visuallyimpaired" id="visuallyimpairedyes" value="yes">
                             Yes
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="visuallyimpaired" id="no" value="option2">
+                            <input class="form-check-input" type="radio" name="visuallyimpaired" id="visuallyimpairedno" value="no">
                             No
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="visuallyimpaired" id="na" value="option3">
+                            <input class="form-check-input" type="radio" name="visuallyimpaired" id="visuallyimpairedna" value="na">
                             n/a
                         </label>
                     </div>
@@ -321,60 +321,46 @@
                     Do you have a hearing impairment?
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="hearingimpaired" id="yes" value="option1">
+                            <input class="form-check-input" type="radio" name="hearingimpaired" id="hearingimpairedyes" value="yes">
                             Yes
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="hearingimpaired" id="no" value="option2">
+                            <input class="form-check-input" type="radio" name="hearingimpaired" id="hearingimpairedno" value="no">
                             No
                         </label>
                     </div>
                     <div class="form-check">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="hearingimpaired" id="na" value="option3">
+                            <input class="form-check-input" type="radio" name="hearingimpaired" id="hearingimpairedna" value="na">
                             n/a
                         </label>
                     </div>
                 </div>
                 <div class="form-group">
-                    Would you be interested in being contacted about psychology research using this game?
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="research" id="yes" value="option1">
-                            Yes
-                        </label>
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text"> Enter email if you'd be interested in being contacted about psychology research using this game.</small>
+                </div>
+                <div>
+                    <div class="form-group">
+                        <label for="likes">Do you have any particular things you liked about the game?</label>
+                        <textarea class="form-control" id="likes" rows="5"></textarea>
                     </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="research" id="no" value="option2">
-                            No
-                        </label>
+                    <div class="form-group">
+                        <label for="confusions">Do you have any complaints or confusions about the game?</label>
+                        <textarea class="form-control" id="confusions" rows="5"></textarea>
                     </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="research" id="na" value="option3">
-                            n/a
-                        </label>
+                    <div class="form-group">
+                        <label for="suggestions">Do you have any suggestions for how to improve the game?</label>
+                        <textarea class="form-control" id="suggestions" rows="5"></textarea>
                     </div>
                 </div>
 
-                <div class="form-group">
-                    <label for="exampleTextarea">Do you have any particular things you liked about the game?</label>
-                    <textarea class="form-control" id="likes" rows="5"></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="exampleTextarea">Do you have any complaints or confusions about the game?</label>
-                    <textarea class="form-control" id="confusions" rows="5"></textarea>
-                </div>
-
-                <div class="form-group">
-                    <label for="exampleTextarea">Do you have any suggestions for how to improve the game?</label>
-                    <textarea class="form-control" id="suggestions" rows="5"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <input type="submit" class="btn btn-lg btn-primary" id="submitconsent" value="Submit"/>
             </form>
+
         </div> <!-- /container -->
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
