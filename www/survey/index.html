@@ -22,6 +22,10 @@
             <h1>Echolocation App Usability and Satisfaction Survey</h1>
 
             <form action="/cgi-bin/processSurvey.py" method="post">
+                <div class="form-group">
+                        <label for="surveyID">Please enter the surveyID provided by the app.</label>
+                        <input type="text" class="form-control" id="surveyID" rows="1">
+                    </div>
                 <h4>Yes/No/(Not Applicable)</h4>
                 <div class="form-group">
                     Are you enjoying the game?
@@ -338,6 +342,7 @@
                         </label>
                     </div>
                 </div>
+                <h4>Additional Information</h4>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Email address</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
