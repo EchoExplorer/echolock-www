@@ -24,7 +24,7 @@
             <form action="/cgi-bin/processSurvey.py" method="post">
                 <div class="form-group">
                         <label for="surveyID">Please enter the surveyID provided by the app.</label>
-                        <input type="text" class="form-control" id="surveyID" rows="1">
+                        <input type="text" name="surveyID" class="form-control"  placeholder="Six digit ID goes here." id="surveyID" rows="1">
                     </div>
                 <h4>Yes/No/(Not Applicable)</h4>
                 <div class="form-group">
@@ -345,21 +345,21 @@
                 <h4>Additional Information</h4>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Enter email">
                     <small id="emailHelp" class="form-text"> Enter email if you'd be interested in being contacted about psychology research using this game.</small>
                 </div>
                 <div>
                     <div class="form-group">
                         <label for="likes">Do you have any particular things you liked about the game?</label>
-                        <textarea class="form-control" id="likes" rows="5"></textarea>
+                        <textarea class="form-control" name="likes" id="likes" rows="5" placeholder="What did you like?"></textarea>
                     </div>
                     <div class="form-group">
                         <label for="confusions">Do you have any complaints or confusions about the game?</label>
-                        <textarea class="form-control" id="confusions" rows="5"></textarea>
+                        <textarea class="form-control" name="confusions" id="confusions" rows="5" placeholder="What did you dislike?"></textarea>
                     </div>
                     <div class="form-group">
                         <label for="suggestions">Do you have any suggestions for how to improve the game?</label>
-                        <textarea class="form-control" id="suggestions" rows="5"></textarea>
+                        <textarea class="form-control" name="suggestions" id="suggestions" rows="5" placeholder="Any impairment suggestions?"></textarea>
                     </div>
                 </div>
 
